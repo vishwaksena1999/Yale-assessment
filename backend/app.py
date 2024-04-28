@@ -59,6 +59,9 @@ def efetch(ids):
         results.append(data)
     return results
 
+
+#this api used for fetching the list of publications containing ID, Title and year based on the search term provided by the user
+
 @app.route("/fetch-ids", methods = ["POST"])
 def fetch_ids():
     input = request.json
@@ -83,6 +86,7 @@ def fetch_ids():
         result["data"].append(data)
     return result
 
+#this api is used to fetch the detailed information of publications given the list ID's
 @app.route("/fetch-info-from-id", methods=["GET"])
 def get_article_from_id():
     ids = request.args.get("id")
