@@ -1,4 +1,3 @@
-# yale-assessment-Softwaredeveloper
  
 Server is written using flask framework. Requests library is used to make API calls to the publications API. 
 xmltodict library is used to convert the XML response to JSON. Server has two APIs. 
